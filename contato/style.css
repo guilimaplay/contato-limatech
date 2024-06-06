@@ -1,0 +1,537 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #5f5f5f ;
+}
+
+.header {
+    background-color: #152751;
+    background-position: center;
+    background-size: cover;
+    border-bottom: solid 5px black;
+    border-radius: 0 0 30% 30%;
+    padding: 0 0 20% 0;
+
+}
+
+.center {
+    display: flex;
+    padding: 30px 80px 30px 80px;
+}
+
+.center > .image {
+    width: 20%;
+}
+
+.image > img {
+    width: 100%;
+    border-radius: 10px / 10px;
+}
+
+.center > .links {
+    width: 80%;
+    text-align: right;
+    padding: 3.5%;
+}
+
+.center > .links > a {
+    padding: 0 7px;
+    font-size: 23px;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    font-family: sans-serif;
+} 
+
+.contato {
+    background-color: #31BA2D;
+    padding: 5px;
+    border-radius: 5px / 5px;
+}
+
+.links > a:hover {
+    border-bottom: 2px solid #FFDD33;
+}
+
+.links-mobile {
+    width: 80%;
+    display: none;
+}
+
+.links-mobile i {
+    color: #0F111E;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.banner {
+    text-align: center;
+    margin-top: -15%;
+}
+
+.banner > div > img {
+    width: 80%;
+    border-radius: 10px / 10px;
+    border: 3px solid #12111F;
+}
+
+.secoes {
+    margin: 50px 0 50px 0;
+    text-align: center;
+}
+
+.secoes > div {
+    text-align: center;s
+}
+
+.secoes > div > h3 {
+    background-color: white;
+    display: inline;
+    margin: -2px;
+    padding: 4px 12px;
+    border: 2px solid #12111F;
+    cursor: pointer;
+}
+
+.secoes > div > h3 > a {
+    text-decoration: none;
+    color: #0F111E;
+    font-family: sans-serif;
+}
+
+.secoes > div > h3:hover {
+    border-bottom: 3px solid #FF7E30;
+}
+
+.secao {
+    margin: 40px 0 0 20px;
+}
+
+.secao a {
+    text-decoration: none;
+    color: #0F111E;
+}
+
+.secao a:hover {
+    border-bottom: solid 3px #FFDD33;
+}
+
+.whatsapp > div > a > img {
+    width: 3%;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+.centralizado {
+    text-align: center;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.white {
+    width: 320px;
+    background-color: white;
+    height: 480px;
+    border-radius: 10px /10px;
+    margin: 20px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.white > img {
+    width: 250px;
+    margin-left: 28px;
+}
+
+.texto {
+    text-align: center;
+}
+
+.texto > p {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/*aqui começa o slider*/
+
+.produto > img {
+    width: 70%;
+}
+
+.produtos {
+    border: 5px solid white;
+    background-color: #FF7E30;
+    padding:40px 0;
+}
+
+.produtos > div {
+    text-align: center;
+}
+
+.produtos > div > h1{
+    display: inline-block;
+    border-bottom: 3px solid #31BA2D;
+    background-color: #152751;
+    color: white;
+    border-radius: 10px/ 10px;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.container-slider{
+    margin: 0 100px;
+    overflow:hidden;
+    padding:60px 0;   
+}
+
+.produto {
+    float: left;
+    background-color:white;
+    text-align: center;
+    padding:15px;
+    border-radius:10px;
+}
+
+.produto > p{
+    margin:15px 0;
+    color:#7E92AC;
+    font-size: 14px;
+}
+
+.slick-slide {
+    margin-left:27px;
+
+  }
+
+  /* the parent */
+  .slick-list {
+    margin-left:-27px;
+   
+  }
+
+/****SLICK SLIDER****/
+
+.slick-dotted ul{
+    display: block;
+	list-style-type: none;
+	text-align: center;
+	position: relative;
+	top: 20px;
+}
+
+.slick-dotted li{
+	display: inline-block;
+	margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+	outline: 0;
+}
+
+.slick-dotted li button{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	color: #d8d8d8;
+	border-width: 0;
+	background: #d8d8d8;
+	opacity: 1;
+	cursor: pointer;
+}
+
+li.slick-active button{
+	background: #152751;
+	color: #152751;
+}
+
+.slick-slide:focus { outline: none; }
+
+.footer {
+    background-color: black;
+    display: flex;
+    text-align: center;
+}
+
+.footer > div {
+    width: 100%;
+}
+
+.footer > div > h3 {
+    border-bottom: 4px solid white;
+    font-size: 20px;
+    color: white;
+    padding: 10px 20px;
+}
+
+.footer > div > a {
+    text-decoration: none;
+    color: white;
+    margin: 5px 40px;
+    font-size: 14px;
+    display: block;
+    font-family: sans-serif;
+}
+
+.footer > div > p {
+    color: white;
+    margin: 0 20px;
+    font-size: 14px;
+    display: block;
+    font-family: sans-serif;
+}
+
+.final {
+    text-align: center;
+}
+
+.final > p {
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.formulario {
+    text-align: center;
+}
+
+.formulario > div {
+    font-family: sans-serif;
+    border-radius: 20px /20px;
+    padding: 30px ;
+    margin: 100px 0;
+    display: inline-block;
+    text-align: center;
+    background-color: #152751;
+}
+
+.formulario > div > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario > div > h2 {
+    color: white;
+    margin: 20px 0;
+    border-bottom: 5px solid #FF7E30;
+    font-size: 30px;
+}
+
+.formulario > div > form > label {
+    text-align: left;
+    color: white;
+    margin: 10px 0;
+}
+
+.formulario > div > form > input {
+    outline: none;
+    font-size: 18px;
+    transition: all 0.5s;
+    padding: 15px;
+}
+
+.formulario > div > form > input:focus {
+    border-radius: 15px / 15px;
+}
+
+.formulario > div > form > textarea {
+    outline: none;
+    font-size: 18px;
+    resize: none;
+    transition: all 0.5s;
+    padding: 15px;
+}
+
+.formulario > div > form > textarea:focus {
+    border-radius: 15px / 15px;
+}
+
+.formulario > div > form > button {
+    padding: 8px;
+    margin-top: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: all 1s;
+    background-color: #0F1120;
+    font-weight: bold;
+}
+
+.formulario > div > form > button:hover {
+    color: #0F1120;
+    border-radius: 10px / 10px;
+    background-color: white;
+}
+
+.pag-contato {
+    text-align: center;
+    margin-top: -17%;
+    margin-bottom: 100px;
+}
+
+.pag-contato > div {
+    font-family: sans-serif;
+    background-color: #FF7E30;
+    width: 50%;
+    text-align: center;
+    border: 10px solid black;
+    border-radius: 20px / 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.pag-contato > div > h1 {
+    font-size: 50px;
+    border-bottom: 5px solid black;
+    margin: 30px;
+}
+
+.pag-contato > div > p {
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    display: inline-block;
+    margin: 50px;
+}
+
+.pag-contato > div > button {
+    font-size: 120%;
+    width: 70%;
+    margin: 30px;
+    background-color: #101020;
+    transition: all 1s;
+    padding: 15px;
+    border-radius: 15px / 15px;
+}
+
+.pag-contato > div > button:hover {
+    background-color: white;
+}
+
+.pag-contato > div > button > a {
+    text-decoration: none;
+    transition: all 1s;
+    color: white;
+}
+
+.pag-contato > div > button > a:hover {
+    color: #101020;
+}
+
+@media screen and (max-width: 790px) {
+    .links {
+        display: none;
+    }
+
+    .links-mobile {
+        width: 80%;
+        padding-left: 45%;
+        padding-right: 10%;
+        display: inline;
+    }
+
+    .fa {
+        margin-left: 100%;
+    }
+
+    .center {
+        padding: 30px 20px 30px 5%;
+    }
+
+    .menu-mobile {
+        margin-top: -27px;
+        display: none;
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .show {
+        opacity: 1;
+        display: block;
+    }
+
+    .hide {
+        opacity: 0;
+        display: block;
+    }
+
+    .image > img {
+        width: 140%;
+    }
+
+    .menu-mobile a {
+        padding-top: -20px;
+        text-align: center;
+        background-color: #5f5f5f;
+        border: solid 1px #0F111E;
+        color: #0F111E;
+        display: block;
+        border-radius: 2px /2px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .menu-mobile a:hover {
+        border-bottom: 3px solid black;
+    }
+
+    .secoes > div > h3 {
+        font-size: 70%;
+        background-color: white;
+        display: inline;
+        margin: -2px;
+        padding: 4px 8px;
+        border: 2px solid #12111F;
+        cursor: pointer;
+    }
+
+    .whatsapp > div > a > img {
+        width: 4%;
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+    }
+
+    .footer {
+        display: block;
+    }
+
+    .pag-contato > div > h1 {
+        font-size: 120%;
+        border-bottom: 5px solid black;
+        margin: 30px;
+    }
+    
+    .pag-contato > div > p {
+        width: 38%;
+        text-align: left;
+        font-size: 100%;
+        border-bottom: 2px solid black;
+        display: inline-block;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+
+    .secoes > div > h3 {
+        font-size: 40%;
+        background-color: white;
+        display: inline;
+        margin: -2px;
+        padding: 4px 8px;
+        border: 2px solid #12111F;
+        cursor: pointer;
+    }
+
+    .whatsapp > div > a > img {
+        width: 6%;
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+    }
+}
